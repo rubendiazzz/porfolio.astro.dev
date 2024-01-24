@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    title: "Marketing UI design in Figma",
+    date: "March 2022",
+    description:
+      "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
+  },
+  {
+    title: "E-Commerce UI code in Tailwind CSS",
+    date: "April 2022",
+    description:
+      "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
