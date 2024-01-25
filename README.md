@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d39497ca-7f7c-4606-9bc0-34c2db7e446c/deploy-status)](https://app.netlify.com/sites/ruubendiazz/deploys)
+![ShowcaseImage](.github/Porfolio_astro.jpg)
 
 # Astro Starter Kit: Basics
 
