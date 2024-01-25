@@ -22,14 +22,10 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <div class="absolute top-0 -z-10 h-full w-full bg-white">
-      <div class="relative h-full w-full bg-slate-950">
-        <div
-          class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"
-        >
-        </div>
-      </div>
+  <body class="relative text-black dark:text-white">
+    <div
+      class="absolute top-0 z-[-2] h-full w-full bg-[#4d4545] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"
+    >
     </div>
     <Header />
     <slot />
