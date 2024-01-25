@@ -52,7 +52,7 @@ const PROJECTS = [
       "This project is a static website for a vape shop. It is built with Html, Css and JavaScript.",
     github: "https://github.com/rubendiazzz/vape-shop-website",
     link: "https://rubendiazzz.github.io/vape-shop-website/",
-    image: "/projects/Vape_shop.webp",
+    image: "/projects/vape_shop.webp",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
@@ -80,18 +80,18 @@ const PROJECTS = [
           loading="lazy"
           class="rounded shadow-2xl shadow-white/10 aspect-video"
           src={image}
-          alt={`Captura de pantalla del proyecto ${image}`}
+          alt={`Screenshot of the project ${image}`}
         />
         <footer class="flex gap-x-4 items-end justify-start mt-4">
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Ver código fuente
+              Look at the source code
             </LinkButton>
           )}
           <LinkButton href={link}>
             <WebIcon class="size-6" />
-            Ir al sitio web
+            Navigate to the website
           </LinkButton>
         </footer>
       </article>
