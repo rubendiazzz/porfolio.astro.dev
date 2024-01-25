@@ -10,16 +10,17 @@ import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
 <Layout
   title="Ruben Diaz Fraga's Portfolio - Web Developer and Graphic Designer with +5 years of experience"
   description="I am Ruben Diaz Fraga, a Web Developer and Graphic Designer from Lugo, Galicia, Spain. I am specialized in creating unique and beautiful things."
 >
-  <main class="px-4">
+  <main class="px-4" id="about">
     <SectionContainer class="py-44 pb-32">
       <img
-        class="rounded-full size-12 mb-4 hover:scale-125 transition"
+        class="rounded-full size-20 mb-4 hover:scale-125 transition"
         src="https://media.licdn.com/dms/image/D4D03AQE-y1TZwLE4TQ/profile-displayphoto-shrink_400_400/0/1699719026785?e=2147483647&v=beta&t=mBK7Yi1sVNKxmtasBOStHFOKsLu51w5gWEFakXRKz-I"
         alt="Ruben Diaz Photo"
       />
@@ -76,6 +77,16 @@ import Projects from "../components/Projects.astro";
         Projects
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+        About me
+      </h2>
+      <AboutMe />
     </SectionContainer>
   </main>
 </Layout>
