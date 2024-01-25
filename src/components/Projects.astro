@@ -1,28 +1,75 @@
 ---
+import AstroIcon from "./icons/AstroIcon.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import LinkButton from "./LinkButton.astro";
+import GitHub from "./icons/GitHub.astro";
+import WebIcon from "./icons/WebIcon.astro";
+
+const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroIcon,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+};
+
 const PROJECTS = [
   {
     title: "My Portfolio - Ruben Diaz",
     description:
       "This project is my personal portfolio, where I show my projects and my skills. It is built with Astro, TypeScript and Tailwind CSS.",
-    link: "ruubendiazz.me",
+    link: "https://ruubendiazz.me",
     github: "https://github.com/rubendiazzz/porfolio.astro.dev",
     image: "/projects/Porfolio_astro.webp",
-    tags: ["Astro", "TypeScript", "Tailwind CSS"],
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
   },
 ];
 ---
 
-{
-  PROJECTS.map(({ image, title, description, tags }) => (
-    <article>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <ul>
-        {tags.map((tag) => (
-          <li>{tag}</li>
-        ))}
-      </ul>
-      <img src={image} alt={`Screenshot of project ${image}`} />
-    </article>
-  ))
-}
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article>
+        <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+          {title}
+        </h3>
+        <p class="text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex gap-x-2 flex-row mb-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-5" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10 aspect-video"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+        />
+        <footer class="flex gap-x-4 items-end justify-start mt-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Ver código fuente
+            </LinkButton>
+          )}
+          <LinkButton href={link}>
+            <WebIcon class="size-6" />
+            Ir al sitio web
+          </LinkButton>
+        </footer>
+      </article>
+    ))
+  }
+</div>
