@@ -4,6 +4,9 @@ import Tailwind from "./icons/Tailwind.astro";
 import LinkButton from "./LinkButton.astro";
 import GitHub from "./icons/GitHub.astro";
 import WebIcon from "./icons/WebIcon.astro";
+import HtmlIcon from "./icons/HtmlIcon.astro";
+import CssIcon from "./icons/CssIcon.astro";
+import JavascriptIcon from "./icons/JavascriptIcon.astro";
 
 const TAGS = {
   ASTRO: {
@@ -16,6 +19,21 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  HTML: {
+    name: "HTML",
+    class: "bg-[#E34F26] text-white",
+    icon: HtmlIcon,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#1572B6] text-white",
+    icon: CssIcon,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F7DF1E] text-white",
+    icon: JavascriptIcon,
+  },
 };
 
 const PROJECTS = [
@@ -27,6 +45,15 @@ const PROJECTS = [
     github: "https://github.com/rubendiazzz/porfolio.astro.dev",
     image: "/projects/Porfolio_astro.webp",
     tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "Vape Ecommerce Shop - Static Website",
+    description:
+      "This project is a static website for a vape shop. It is built with Html, Css and JavaScript.",
+    github: "https://github.com/rubendiazzz/vape-shop-website",
+    link: "https://rubendiazzz.github.io/vape-shop-website/",
+    image: "/projects/Vape_shop.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
 ---
