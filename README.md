@@ -1,6 +1,6 @@
 ![ShowcaseImage](.github/Porfolio_astro.jpg)
 
-# [Ruben] Portfolio
+# Ruben Diaz's Portfolio
 
 Welcome to my portfolio! This repository contains the source code for my personal portfolio website.
 
@@ -53,7 +53,7 @@ This project is licensed under the MIT License.
 📫 Contact
 Feel free to reach out if you have any questions or if you want to discuss something:
 
-Email: your-email@example.com
-LinkedIn: Your LinkedIn
-GitHub: Your GitHub
+Email: rubendfraga@gmail.com
+LinkedIn: https://www.linkedin.com/in/ruubendiazz
+GitHub: https://github.com/rubendiazzz
 ```
