@@ -14,8 +14,8 @@ export default async (req, res) => {
 		to: 'rubendfraga@gmail.com',
 		from: 'your-verified-email@example.com', // Use a verified sender email
 		subject: `New Message From ${name}`,
-		text: message,
-		html: `<p>${message}</p>`
+		text: `From: ${email}, Message: ${message}`,
+		html: `<p>From: ${email}, Message: ${message}</p>`
 	};
 
 	try {
