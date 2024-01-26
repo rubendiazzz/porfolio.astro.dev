@@ -11,6 +11,8 @@ import Briefcase from "../components/icons/Briefcase.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
 import AboutMe from "../components/AboutMe.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Contact from "../components/icons/Contact.astro";
 ---
 
 <Layout
@@ -87,6 +89,16 @@ import AboutMe from "../components/AboutMe.astro";
         About me
       </h2>
       <AboutMe />
+    </SectionContainer>
+
+    <SectionContainer id="contact">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Contact class="size-7" />
+        Contact
+      </h2>
+      <ContactForm />
     </SectionContainer>
   </main>
 </Layout>
