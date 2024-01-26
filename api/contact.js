@@ -1,5 +1,5 @@
-import { setApiKey, send } from '@sendgrid/mail';
-
+import pkg from '@sendgrid/mail';
+const { setApiKey, send } = pkg;
 export default async (req, res) => {
 	if (!process.env.SENDGRID_API_KEY) {
 		return res.status(500).send('SendGrid API key not configured.');
