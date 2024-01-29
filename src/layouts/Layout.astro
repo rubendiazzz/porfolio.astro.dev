@@ -22,7 +22,7 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="relative dark:text-white">
+  <body class="relative text-white">
     <div
       class="absolute top-0 z-[-2] h-full w-full bg-[#322f2f] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] blur-[1px]"
     >
@@ -33,9 +33,6 @@ const { description, title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  :root {
-    color-scheme: dark;
-  }
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
     scroll-behavior: smooth;
