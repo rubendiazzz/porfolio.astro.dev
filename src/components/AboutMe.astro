@@ -36,7 +36,29 @@ const personalImageAlt = "Ruben Diaz's personal image";
 
   <img
     src="/me.jpg"
-    class="rounded-full size-64 order-1 md:order-2 hover:scale-105 transition-all duration-300"
+    class="rounded-full size-64 order-1 md:order-2 hover:scale-105 transition-all duration-300 wave-effect"
     alt={personalImageAlt}
   />
 </article>
+
+<style>
+  @keyframes waveBorderAnimation {
+    0%,
+    100% {
+      border-radius: 50%;
+    }
+    25% {
+      border-radius: 60% 40% 60% 40% / 50% 50% 50% 50%;
+    }
+    50% {
+      border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%;
+    }
+    75% {
+      border-radius: 60% 40% 60% 40% / 50% 50% 50% 50%;
+    }
+  }
+
+  .wave-effect {
+    animation: waveBorderAnimation 4s ease-in-out infinite;
+  }
+</style>
