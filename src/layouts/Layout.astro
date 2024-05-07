@@ -23,6 +23,7 @@ const { description, title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="relative text-[#FFFFFF]">
+	<div class="absolute top-0 z-[-2] h-full w-full bg-[#373636] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
     <Header />
     <slot />
     <Footer />
@@ -35,12 +36,6 @@ const { description, title } = Astro.props;
 	}
 
   body {
-    background: rgb(97, 99, 99);
-    /* background: radial-gradient(
-      circle,
-      rgb(6, 56, 71) 47%,
-      rgb(151, 56, 52) 100%
-    ); */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
