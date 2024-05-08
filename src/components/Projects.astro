@@ -62,13 +62,13 @@ const PROJECTS = [
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
       <article>
-        <h3 class="text-2xl font-semibold text-[#f4adf4] mb-2 flex justify-center md:justify-start lg:justify-start">
+        <h3 class="text-2xl font-semibold text-[#f4adf4] mb-2 flex justify-start md:justify-start lg:justify-start">
           {title}
         </h3>
-        <p class="text-lg mb-4 text-pretty flex text-center md:text-left lg:text-left">
+        <p class="text-lg mb-4 text-pretty flex text-left md:text-left lg:text-left">
           {description}
         </p>
-        <ul class="flex gap-x-2 flex-row mb-2 justify-center md:justify-start lg:justify-start">
+        <ul class="flex gap-x-2 flex-row mb-2 justify-start md:justify-start lg:justify-start">
           {tags?.map((tag) => (
             <li>
               <span
