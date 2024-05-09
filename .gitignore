@@ -1,6 +1,19 @@
 # build output
 dist/
 
+public/build/
+
+.idea/
+.vscode/
+
+.env.*
+*.local
+
+coverage/
+
+.cache/
+node_modules/.cache/
+
 # generated types
 .astro/
 
@@ -19,3 +32,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+.vercel/token
